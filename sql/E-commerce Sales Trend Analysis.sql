@@ -189,7 +189,49 @@ SELECT
 FROM processed_data
 ORDER BY YEAR(Order_Date), MONTHNAME(Order_Date);
 -- 11. Which month generated the highest and lowest profit?
+(
+    SELECT 'Highest' AS Profit_Type,
+           `Year_Month`,
+           SUM(Profit) AS Total_Profit
+    FROM processed_data
+    GROUP BY `Year_Month`
+    ORDER BY Total_Profit DESC
+    LIMIT 1
+)
+UNION ALL
+(
+    SELECT 'Lowest' AS Profit_Type,
+           `Year_Month`,
+           SUM(Profit) AS Total_Profit
+    FROM processed_data
+    GROUP BY `Year_Month`
+    ORDER BY Total_Profit ASC
+    LIMIT 1
+);
 -- 12. Are there months where sales are high but profit is comparatively low?
+SELECT
+    Year,
+    Month,
+    Month_Name,
+    ROUND(SUM(Sales), 2) AS Total_Sales,
+    ROUND(SUM(Profit), 2) AS Total_Profit,
+    ROUND((SUM(Profit) / SUM(Sales)) * 100, 2) AS Profit_Margin_Pct
+FROM processed_data
+GROUP BY
+    Year,
+    Month,
+    Month_Name
+HAVING SUM(Sales) > (
+    SELECT AVG(Monthly_Sales)
+    FROM (
+        SELECT SUM(Sales) AS Monthly_Sales
+        FROM processed_data
+        GROUP BY Year, Month
+    ) s
+)
+ORDER BY
+    Profit_Margin_Pct ASC,
+    Total_Sales DESC;
 -- 13. How does monthly profit margin change over time?
 
 ### D. Yearly Performance
