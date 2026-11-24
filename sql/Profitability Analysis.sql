@@ -1,0 +1,12 @@
+-- 	Which products have high revenue but below-average profit margins?
+-- 	Which regions generate high revenue but low profit?
+--     Which products have negative profit margins?
+--     Classify products into High, Medium and Low profitability groups.
+-- 	What percentage of transactions generate a loss?
+-- 	Which category contributes the most to total company profit?
+--     Find the top 3 products by revenue in each category.
+--     Find the second-highest revenue-generating product in each region.
+--     Identify products whose monthly sales are higher than their average monthly sales.
+--     Calculate the running total of profit for each month.
+--     Find each region's percentage contribution to total revenue.
+--     Identify categories whose profit is greater than the overall average category profit.

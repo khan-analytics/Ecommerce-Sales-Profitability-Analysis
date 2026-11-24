@@ -1,0 +1,8 @@
+-- Which region generates the highest revenue?
+-- Which region generates the highest profit?
+-- Which region sells the highest quantity?
+-- What is the profit margin of each region?
+-- Which region has the lowest profitability?
+-- Which products are most popular in each region?
+-- Rank regions based on revenue.
+-- Which category performs best in each region?

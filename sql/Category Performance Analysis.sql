@@ -1,0 +1,10 @@
+-- Which category generates the highest revenue?
+-- Which category generates the highest profit?
+-- Which category sells the highest quantity?
+-- What is the profit margin of each category?
+-- Which category has the lowest profit margin?
+-- What is the revenue contribution of each category?
+-- Which category has the highest average transaction value?
+-- Which category contains the most products?
+-- Rank categories based on total profit.
+-- Which products generate the highest revenue within each category?

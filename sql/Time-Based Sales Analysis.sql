@@ -1,0 +1,10 @@
+-- What is the total revenue generated each month? 
+-- Which month generates the highest revenue? 
+-- Which month generates the highest profit? 
+-- What is the quarterly revenue?
+-- What is the yearly revenue? 
+-- How does revenue change compared to the previous month? 
+-- Calculate month-over-month revenue growth percentage.
+-- Calculate cumulative revenue over time. 
+-- Which month has the lowest sales performance? 
+-- Identify the best-performing quarter.
